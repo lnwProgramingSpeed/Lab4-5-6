@@ -13,11 +13,21 @@ public class TV {
 
     // set Volume
     public void setVolumeUp() {
-        volume++;
+        if(volume > 20){
+            System.out.println("Max Volume");
+        }else{
+            volume++;
+        }
+        
     }
 
     public void setVolumeDown() {
-        volume--;
+        if(volume < 20){
+            System.out.println("Min Volume");
+        }else{
+            volume--;
+        }
+        
     }
 
     // set state
